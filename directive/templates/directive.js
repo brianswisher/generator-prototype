@@ -15,7 +15,7 @@ define(function(require){
       };
 
       return {
-        templateUrl: '/views/directives/<%= name %>.htm',
+        <% if (options['skip-template'] === undefined) { %>templateUrl: '/views/directives/<%= name %>.htm',<% } else { %>template: '<div class="<%= name %>"></div>',<% } %>
         link: link,
         restrict: 'EA',
         replace: true

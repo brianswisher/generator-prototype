@@ -1,0 +1,23 @@
+<div class="page">
+  <h4>[[ 'Host: %HOST% running %SERVERS_LENGTH% servers' | interpolate ]]</h4>
+  <p>
+    <a data-target="showReadme" ng-click="toggle($event)">README.md</a> |
+    <code ng-repeat="server in config.servers | filter:{name:'weinre'}"
+          data-url="[[ 'http://%HOST%:'+server.id+'/target/target-script-min.js#anonymous' | interpolate ]]"
+          ng-click="copyScriptTag($event)">
+      weinre script tag
+    </code>
+  </p>
+  <div ng-show="showReadme" class="readme" ng-bind-html="readme"></div>
+  <ul>
+    <li class="name" ng-repeat="server in config.servers | filter:{link:true}">
+      <a href="[[ 'http://%HOST%:'+server.id | interpolate ]]">
+        [[server.name]]
+      </a> : [[server.id]]
+    </li>
+    <li class="name" ng-repeat="server in config.servers | filter:{link:false}">
+      [[server.name]] : [[server.id]]
+    </li>
+  </ul>
+  <h3 class="watching">watching client files...</h3>
+</div>

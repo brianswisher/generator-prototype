@@ -1,0 +1,8 @@
+Description:
+    Creates a new Angular AMD filter
+
+Example:
+    yo prototype:filter name
+
+    This will create:
+        app/scripts/filters/name.js

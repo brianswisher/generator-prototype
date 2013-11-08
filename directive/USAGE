@@ -1,0 +1,10 @@
+Description:
+    Creates a new Angular AMD directive
+
+Example:
+    yo prototype:directive name [--skip-template]
+
+    This will create:
+        app/scripts/directives/name.js
+        test/directives/nameSpec.js
+        app/views/directives/name.htm

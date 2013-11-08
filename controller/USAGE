@@ -1,0 +1,12 @@
+Description:
+    Creates a new Angular AMD controller
+
+Example:
+    yo prototype:controller name [--template]
+
+    This will create:
+        app/scripts/controllers/name.js
+        test/controllers/nameSpec.js
+
+    optionally:
+        app/views/controllers/name.htm

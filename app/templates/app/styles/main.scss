@@ -1,0 +1,28 @@
+$iconSpritePath: "../images/glyphicons-halflings.png";
+$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
+
+@import "bootstrap-sass/lib/bootstrap";
+
+html, body {
+  margin: 20px;
+}
+
+body {
+  margin: 0;
+  background: #fafafa;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+.prototypes {
+  a {
+    display: inline-block;
+    margin: 0 4px 0 0;
+    padding: 0 4px;
+    background-color: #ededed;
+  }
+}
+
+#results { background-color: white; }
+#results li.pass { color: green; }
+#results li.fail { color: red; }

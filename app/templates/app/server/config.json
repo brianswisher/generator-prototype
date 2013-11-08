@@ -1,0 +1,7 @@
+{
+  "host" : "0.0.0.0",
+  "http" : 9000,
+  "weinre" : 8080,
+  "proxy" : 8888,
+  "livereload" : 35729
+}

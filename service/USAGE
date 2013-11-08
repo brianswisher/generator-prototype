@@ -1,0 +1,8 @@
+Description:
+    Creates a new Angular AMD service
+
+Example:
+    yo prototype:service name
+
+    This will create:
+        app/scripts/services/name.js

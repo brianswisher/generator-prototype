@@ -64,6 +64,7 @@
           // 'test/spec/**/*.js'
           files: [
             '<%%= yeoman.app %>/{,*/}*.html',
+            '<%= yeoman.app %>/views/**/*.htm',
             '.tmp/styles/{,*/}*.css',
             '<%%= yeoman.depl %>/css/**/*.css',
             '{.tmp,<%%= yeoman.app %>}/scripts/{,*/}*.js',
